@@ -5,12 +5,39 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       backgroundColor: Colors.white,
-      body: Column(
-        children: [
-          Text('A New Way \n To Travel', style: TextStyle(fontWeight: FontWeight.bold ),),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    Icon(Icons.place_sharp, color: Colors.blue, size: 9,),
+                    SizedBox(width: 2,),
+                    Text('Bali, Indonesia', style: TextStyle(fontSize: 8),
+                    ),
+                  ],
+                ),
+                Container(
+                  height: 20,
+                  width: 20,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: DecorationImage(image: AssetImage('assets/img/unnamed.png'), fit: BoxFit.contain)
+                  ),
+          ),
+        
+        
+                
+                
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
