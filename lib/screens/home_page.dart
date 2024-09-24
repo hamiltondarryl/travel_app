@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Row(
+                const Row(
                   children: [
                     Icon(Icons.place_sharp, color: Colors.blue, size: 9,),
                     SizedBox(width: 2,),
@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
                 Container(
                   height: 20,
                   width: 20,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                     image: DecorationImage(image: AssetImage('assets/img/unnamed.png'), fit: BoxFit.contain)
                   ),
